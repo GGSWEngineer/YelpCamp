@@ -1,0 +1,62 @@
+<% layout("/layouts/boilerplate") %> <% layout('layouts/boilerplate')%>
+
+<div class="container d-flex justify-content-center align-items-center my-4">
+  <div class="row">
+    <div
+      class="col-8 offset-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-5 offset-lg-3.5 col-xl-4 offset-xl-4"
+    >
+      <div class="card shadow">
+        <img
+          src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtcGdyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+          alt=""
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Register</h5>
+          <form
+            action="/register"
+            class="validated-form"
+            novalidate
+            method="POST"
+          >
+            <div class="mb-3">
+              <label class="form-label" for="username">Username:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="username"
+                name="username"
+                required
+                autofocus
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email:</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">Password:</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <button class="btn btn-success w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
